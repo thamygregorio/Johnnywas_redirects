@@ -4,11 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:ui": "npx cypress open",
+    "cypress:run:electron": "npx cypress run",
+    "cypress:run:chrome": "npx cypress run --browser chrome",
+    "cypress:run:firefox": "npx cypress run --browser firefox",
+    "cypress:run:allure": "npx cypress run --browser firefox --env allure=true screenshots=false video=false",
+    "allure:results": "allure generate allure-results",
+    "allure:open": "allure open allure-report",
+    "allure:remove": "rm -r allure-results/ allure-report/ cypress/cucumber-json/ cypress/videos/ cypress/support/reports/ cypress/screenshots cypress/downloads || true"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.0.2"
+    "cypress": "^12.0.2",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "allure-commandline": "^2.20.1"
   }
 }
