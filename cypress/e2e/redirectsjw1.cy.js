@@ -4,11 +4,6 @@ describe('URL redirect - Step 1', {
   "retries": 1
 }, () => {
 
-  it('URL redirect fo [2238]', () => {
-    cy.visit('/' + 'luna-faith-scarf.html')
-    cy.url().should('include', '/' + 'accessories/scarves/silk-scarves.html')
-  })
-
   it('URL redirect for [2238]', () => {
     cy.visit('/' + 'luna-faith-scarf.html')
     cy.url().should('include', '/' + 'accessories/scarves/silk-scarves.html')
