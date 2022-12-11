@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 
-describe('example to-do app', () => {
+describe('Redirects Test', () => {
 
   it('URL redirect fo [2238]', () => {
     cy.visit('/'+'luna-faith-scarf.html', { onBeforeLoad: (win) => { win.sessionStorage.clear() } })
