@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
 
-describe('URL redirect - Step 4', {
-  "retries": 1
-}, () => {
+describe('URL redirect - Step 4', () => {
 
   it('URL redirect for [81609]', () => {
     cy.visit('/' + 'issoria-blanket-poncho-j40617x-nap-3x.html')

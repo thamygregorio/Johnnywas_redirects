@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
 
-describe('URL redirect - Step 5', {
-  "retries": 1
-}, () => {
+describe('URL redirect - Step 5', () => {
 
   it('URL redirect for [96843]', () => {
     cy.visit('/'+'snake-ring-with-star-set-diamond-lh0050-gld-8-5-pre-order.html')

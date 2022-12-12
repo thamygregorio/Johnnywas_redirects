@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
 
-describe('URL redirect - Step 3', {
-  "retries": 1
-}, () => {
+describe('URL redirect - Step 3', () => {
 
   it('URL redirect for [65116]', () => {
     cy.visit('/'+'leith-velvet-bolero.html')

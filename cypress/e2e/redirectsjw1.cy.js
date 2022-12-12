@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
 
-describe('URL redirect - Step 1', {
-  "retries": 1
-}, () => {
+describe('URL redirect - Step 1', () => {
 
   it('URL redirect for [2238]', () => {
     cy.visit('/' + 'luna-faith-scarf.html')
